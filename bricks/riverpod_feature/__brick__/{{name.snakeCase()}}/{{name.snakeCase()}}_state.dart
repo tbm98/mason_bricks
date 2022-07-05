@@ -10,7 +10,7 @@ class {{name.pascalCase()}}State with _${{name.pascalCase()}}State {
     @Default('') String id,
     @Default(false) bool loading,
     @Default(false) bool done,
-  }) = _ComposeState;
+  }) = _{{name.pascalCase()}}State;
 
   factory {{name.pascalCase()}}State.fromJson(Map<String, dynamic> json) =>
       _${{name.pascalCase()}}StateFromJson(json);

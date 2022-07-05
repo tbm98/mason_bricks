@@ -10,7 +10,7 @@ class {{name.pascalCase()}}Notifier extends StateNotifier<{{name.pascalCase()}}S
   {{name.pascalCase()}}Notifier({
     {{name.pascalCase()}}State? state,
   })
-      : super(state);
+      : super(state ?? const {{name.pascalCase()}}State());
 
   void load() {
     state = state.copyWith(loading: true);
