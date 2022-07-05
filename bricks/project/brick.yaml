@@ -21,8 +21,13 @@ environment:
 #  * an optional prompt phrase used when asking for the variable
 #  * a list of values (enums only)
 vars:
-  # name:
-  #   type: string
-  #   description: Your name
-  #   default: Dash
-  #   prompt: What is your name?
+  name:
+    type: string
+    description: Your project name
+    default: hello_world
+    prompt: What is your project name?
+  use_firebase:
+    default: false
+    type: boolean
+    description: Use Firebase
+    prompt: Does this project use Firebase?
