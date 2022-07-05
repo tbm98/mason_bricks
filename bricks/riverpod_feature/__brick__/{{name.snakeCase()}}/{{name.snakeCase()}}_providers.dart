@@ -1,13 +1,15 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '{{name.snakeCase()}}_state.dart';
 
-final {{name.pascalCase()}}Provider =
+final {{name.camelCase()}}Provider =
     StateNotifierProvider.autoDispose<{{name.pascalCase()}}Notifier, {{name.pascalCase()}}State>((ref) {
   return {{name.pascalCase()}}Notifier();
 });
 
 class {{name.pascalCase()}}Notifier extends StateNotifier<{{name.pascalCase()}}State> {
-  {{name.pascalCase()}}Notifier({{{name.pascalCase()}}State? state})
+  {{name.pascalCase()}}Notifier({
+    {{name.pascalCase()}}State? state,
+  })
       : super(state);
 
   void load() {
