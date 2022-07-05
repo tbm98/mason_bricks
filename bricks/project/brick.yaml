@@ -25,9 +25,9 @@ vars:
     type: string
     description: Your project name
     default: hello_world
-    prompt: What is your project name?
+    prompt: What is your project name (default is hello_world)?
   use_firebase:
     default: false
     type: boolean
     description: Use Firebase
-    prompt: Does this project use Firebase?
+    prompt: Does this project use Firebase (default is false)?
