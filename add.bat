@@ -1,0 +1,1 @@
+mason add --global authfb --path bricks/authfb & mason add --global project --path bricks/project & mason add --global riverpod_feature --path bricks/riverpod_feature
