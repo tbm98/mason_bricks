@@ -14,7 +14,9 @@ class _{{name.pascalCase()}}State extends ConsumerState<{{name.pascalCase()}}Scr
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+        title: Text('{{name.titleCase()}}'),
+      ),
       body: Container(),
     );
   }
